@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Admin – Career Readiness Survey</title>
+  <link rel="icon" href="/img/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="admin-body">
+  <header class="topbar">
+    <a class="brand" href="/admin">
+      <img class="brand-mark" src="/img/mark.svg" alt="">
+      <span>Your Big Year<small>Survey admin</small></span>
+    </a>
+    <nav class="tabs hidden" id="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="builder" aria-selected="true">Survey builder</button>
+      <button class="tab" role="tab" data-tab="results" aria-selected="false">Results</button>
+      <button class="tab" role="tab" data-tab="settings" aria-selected="false">Settings</button>
+      <button class="tab" id="signout" type="button">Sign out</button>
+    </nav>
+  </header>
+
+  <main class="wrap wrap-wide" id="admin"><p class="muted">Loading…</p></main>
+  <dialog id="dlg"></dialog>
+
+  <script src="/vendor/chart.umd.js"></script>
+  <script src="/vendor/html2canvas.min.js" defer></script>
+  <script src="/vendor/jspdf.umd.min.js" defer></script>
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>
